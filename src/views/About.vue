@@ -95,6 +95,7 @@ export default {
   display: flex;
   color: var(--light-red);
   justify-content: space-between;
+  max-width:400px;
 }
 .list > ul{
   list-style-type: none;
