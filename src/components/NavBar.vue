@@ -6,7 +6,7 @@
     <v-spacer></v-spacer>
     <v-btn text @click="scroll('home')">Home</v-btn>
     <v-btn text @click="scroll('about')">About</v-btn>
-    <v-btn text @click="scroll('projects')">Projects</v-btn>
+    <v-btn text @click="scroll('projects')">Projects/Experience</v-btn>
     <v-btn text @click="linkToPage">Resume</v-btn>
     <v-btn text @click="scroll('contact')">Contact</v-btn>
   </v-app-bar>
@@ -30,4 +30,10 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 1150px){
+.theme--dark.v-btn{
+    font-size: 1.8vw !important;
+}
+}
+
 </style>

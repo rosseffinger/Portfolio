@@ -14,13 +14,13 @@
           <div class="list">
           <ul>
             <li>
-              Javscript
+              HTML, CSS
+            </li>
+            <li>
+              JavaScript
             </li>
             <li>
               Vue.js
-            </li>
-            <li>
-              HTML, CSS
             </li>
           </ul>
           <ul>

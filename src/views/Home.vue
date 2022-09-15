@@ -8,12 +8,9 @@
                     <a href="https://www.linkedin.com/in/ross-effinger/" target="_blank">
                         <font-awesome-icon icon="fa-brands fa-linkedin-in" />
                     </a>
-                    <a href="" target="_blank">
+                    <a href="https://github.com/rosseffinger" target="_blank">
                         <font-awesome-icon icon="fa-brands fa-github" />
                     </a>
-<!--                     <a href="Ross_Effinger_Resume.pdf" target="_blank">
-                        <i class="fa-solid fa-file"></i>
-                    </a> -->
                     <button class="bland-button" @click="linkToPage"><i class="fa-solid fa-file"></i></button>
                     
                     <button @click="scroll('projects')" class="bland-button">
@@ -56,6 +53,11 @@ export default {
   --black: #111111;
   --light-black: #181818;
 }
+.home{
+    margin: 15px;
+    padding:20px;
+
+}
 .top-level-div {
     align-self: center;
     display:flex;
@@ -72,6 +74,7 @@ export default {
 .occupation{
     color: var(--white);
     font-size: 2rem;
+    padding-left: 5px;
 }
 .information-div{
     display:flex;
@@ -140,5 +143,4 @@ a{
     padding: 0px 0px;
     margin: 0px 0px;
 }
-
 </style>
