@@ -66,6 +66,7 @@ export default {
     justify-content: center;
     align-items: center;
     height: inherit;
+    margin-top: 15px;
 }
 .title{
     color: var(--light-red);
@@ -122,7 +123,7 @@ button{
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 2rem;
-    margin: 0 2rem;
+    margin: 15px 2rem; 
 }
 a{
     color: var(--light-red);
@@ -142,5 +143,23 @@ a{
     color: var(--light-red);
     padding: 0px 0px;
     margin: 0px 0px;
+}
+@media screen and (max-width: 575px){
+    .top-level-div{
+        align-items: flex-start !important;
+    }
+    .title{
+       font-size: 4rem; 
+    }
+    .occupation{
+        margin-bottom:15px;
+        padding-bottom: 15px;
+        font-size: 1.75rem;
+        margin-top: 15px;
+    }
+    .links{
+        padding: 10px 0rem;
+        margin: 0 1rem; 
+    }
 }
 </style>

@@ -43,15 +43,16 @@ export default {
   --light-grey: #1e1e1e
 }
 body{
-  min-width: 100vw;   
   margin: 0;
   padding:0;
   line-height: 1.4;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  font-size: 3vw;
+  max-width: 100%;
+
 }
 h1{
-  line-height: 1.2 !important;
-}
+  line-height: 1.2 !important;}
 a{
   color: var(--white);
   text-decoration: underline;
@@ -73,23 +74,46 @@ a{
   background-color: var(--black);
   height: 100vh;
   width: 100vw;
+  margin: 15px;
+  padding:15px;
 
 }
 .about{
   background-color: inherit;
-  height: 100vh;
   width: 100vw;
-
 }
 .projects{
   background-color: inherit;
-  height: 100vh;
   width: 100vw;
 
 }
 .contact{
   background-color: var(--black);
-  height: 100vh;
   width: 100vw;
+}
+@media screen and (max-width: 550px){
+  body{
+    font-size: 3.5vw;
+  }
+}
+@media screen and (min-width: 600px){
+  body{
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 800px){
+  body{
+    font-size: 2.5vw;
+  }
+}
+@media screen and (min-width: 900px){
+  body{
+    font-size: 2vw;
+  }
+}
+@media screen and (min-width: 1200px){
+  body{
+    font-size: 1.5vw;
+  }
 }
 </style>

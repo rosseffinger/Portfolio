@@ -3,8 +3,8 @@
     <div class="top-level-div">
       <div class="mid-level-div">
         <h1 class="title">About-Me</h1>
-          <p class="about-me-p">I'm Ross, I am a web developer who has a strong passion for development.
-        I found my joy for development back in high school with the introduction to computer science class, fast 
+          <p class="about-me-p">I'm Ross, I like building things for the web, and have a strong passion for development.
+        I found my joy for development back in high school with my introduction to computer science class, fast 
         forward 5 years and I have a degree in computer science and work as a full time java backend developer.
           </p>
           <br />
@@ -35,7 +35,7 @@
 
       </div>
       <div class="picture-div">
-        <img class="picture" src="../pictures/Ross_Effinger.jpg" />
+        <img src='../pictures/Ross-Effinger-head.jpg' />
       </div>
     </div>
   </div>
@@ -59,12 +59,71 @@ export default {
   --light-black: #181818;
 }
 .about{
+  display: grid;
+  grid-template-rows: repeat(1, minmax(300px, 1fr));
+  height: 100vh;
+}
+.top-level-div{
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  justify-content: center; 
+  gap: 2rem;
+  align-content: center;
+}
+.mid-level-div{
+  max-width: 500px;
+  max-height: min-content;
+  margin: 10px;
+  padding:10px;
+}
+.picture-div{
+  margin: 1rem;
+
+}
+.list{
+  display: flex;
+  flex-direction: row;
+  color: var(--light-red);
+  justify-content: space-between;
+  max-width: 400px;
+}
+ul li{
+  list-style-position: inside;
+}
+.list > ul > li::marker{
+  content: ">"; 
+}
+.top-level-div > .picture-div > img{
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    max-height: 300px;
+    object-position: center;
+    max-width: 400px;
+}
+.title{
+  color: var(--light-red);
+
+}
+@media screen and (min-width: 1200px){
+  .mid-level-div{
+    max-width: 600px;
+  }
+
+}
+
+/* .about{
   display: flex;
   flex-direction: row;
   align-items: center;
   align-self: center;
   color: var(--white);
   justify-content: center;
+  height:100vh;
+  flex-wrap: wrap;
 }
 .top-level-div{
   display: flex;
@@ -72,13 +131,15 @@ export default {
   align-items: center;
   justify-content: center;
   font-size: 20px;
+  flex-wrap: wrap;
+  margin: 0px 15px;
+
 }
 .mid-level-div{
   margin-right: 15px;
   display: flex;
   flex-direction: column;
-  height: 500px;
-  max-width: 500px;
+  width: 75vw;
 }
 .title{
   color: var(--light-red);
@@ -86,10 +147,24 @@ export default {
 .about-me-p{
   line-height: 1.5;
 }
-.picture{
+.picture-div{
+  width: 400px;
+  height: 400px;
+  margin-top:15px;
+  margin-right:15px;
+  z-index: 1;
+  background: url('../pictures/Ross-Effinger-head.jpg');
+  background-repeat: no-repeat;
   object-fit: contain;
-  max-height: 500px;
-  max-width: 500px;
+  background-size:cover;
+  background-position: center;
+}
+.picture{
+  object-fit:cover;
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  margin-top: 10px;
 }
 .list{
   display: flex;
@@ -105,5 +180,92 @@ export default {
 li::before{
   content: '>';
 }
+@media screen and (max-width: 575px){
+  .picture-div{
+    width: 75vw;
+    height:250px;
 
+  }
+}
+@media screen and (min-width:1150px){
+  .mid-level-div{
+    width: 50vw;
+  }
+}.about{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  color: var(--white);
+  justify-content: center;
+  height:100vh;
+  flex-wrap: wrap;
+}
+.top-level-div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-wrap: wrap;
+  margin: 0px 15px;
+
+}
+.mid-level-div{
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+}
+.title{
+  color: var(--light-red);
+}
+.about-me-p{
+  line-height: 1.5;
+}
+.picture-div{
+  width: 400px;
+  height: 400px;
+  margin-top:15px;
+  margin-right:15px;
+  z-index: 1;
+  background: url('../pictures/Ross-Effinger-head.jpg');
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-size:cover;
+  background-position: center;
+}
+.picture{
+  object-fit:cover;
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  margin-top: 10px;
+}
+.list{
+  display: flex;
+  color: var(--light-red);
+  justify-content: space-between;
+  max-width:400px;
+}
+.list > ul{
+  list-style-type: none;
+  margin: 0px 15px 0px 0px;
+  padding: 0px 15px 0px 0px;
+}
+li::before{
+  content: '>';
+}
+@media screen and (max-width: 575px){
+  .picture-div{
+    width: 75vw;
+    height:250px;
+
+  }
+}
+@media screen and (min-width:1150px){
+  .mid-level-div{
+    width: 50vw;
+  }
+} */
 </style>

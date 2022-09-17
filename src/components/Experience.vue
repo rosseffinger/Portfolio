@@ -20,11 +20,15 @@ export default {
 </script>
 
 <style scoped>
-.experience-div-widget{
+div{
+    color: var(--white);
+}
+/* .experience-div-widget{
     font-size: 1.1rem;
     display: flex;
     flex-direction: row;
     padding: 1rem 1rem;
+    margin-top: 15px;
     margin-right:8px;
     background: var(--light-grey);
     box-shadow: 5px 5px 5px 0px rgb(158,158,158, .5);
@@ -53,5 +57,5 @@ export default {
     justify-content:space-evenly;
     width: 30vw;
     /* box-shadow: 5px 5px 5px 0px rgb(244,67,54, .5); */
-}
+
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="projects" id="projects">
     <div class="project-div">
-     <ProjectWidget
+      <ProjectWidget
       v-for="project in projects" :key="project.id" :project="project" /> 
     </div>
     <div class="project-div">
@@ -66,6 +66,27 @@ export default {
 
 <style>
 .projects{
+  margin-top:50px;
+  display: grid;
+  grid-template-rows: repeat(2, minmax(300px, 1fr));
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.project-div{
+  display: flex;
+  flex-shrink: 1;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100vw;
+  padding: 0px 15px;
+  overflow:hidden;
+
+}
+
+/* .projects{
   display: flex;
   flex-direction: row;
   color: var(--white);
@@ -82,5 +103,5 @@ export default {
 }
 .project-div:first-of-type{
   margin-top: 50px;
-}
+} */
 </style>

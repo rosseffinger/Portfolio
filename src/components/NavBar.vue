@@ -30,10 +30,19 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (max-width: 1150px){
-.theme--dark.v-btn{
-    font-size: 1.8vw !important;
+.app-bar {
+    position: fixed !important;
 }
+.v-btn{
+    font-size:1.1vw;
 }
+.v-toolbar__content{
+    position: relative;
+}
+    @media screen and (max-width: 1150px){
+        .theme--dark.v-btn{
+            font-size: 1.8vw !important;
+        }
+    }
 
 </style>
