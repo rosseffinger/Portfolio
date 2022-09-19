@@ -37,7 +37,7 @@ export default {
         {
           id: 2,
           title: 'This website', 
-          description: 'I built this website using Vue.js',
+          description: 'I built this website using Vue.js, and plan on constantly updating it with my new projects as well as fresh styling.',
           techStack: 'HTML, CSS, Vue.js',
           github: 'https://github.com/rosseffinger/Portfolio',
           src: require('../pictures/vue-transparent-removebg-preview.png')
@@ -49,14 +49,16 @@ export default {
           title: 'Associate Software Developer',
           description: 'Developing microservices and RESTful APIs via Java Spring Boot',
           company: 'Infosys',
-          techStack: 'Java'
+          techStack: 'Java',
+          src: require('../pictures/in-removebg-preview.png')
         },
         {
           id: 2,
           title: 'Web Development Intern',
-          description: 'Full stack development, created widgets and updated styles for site.',
+          description: 'Full stack development; created widgets and updated styles for site.',
           company: 'Haynes International',
-          techStack: 'Sitefinity(CMS), C#, jQuery, HTML, CSS'
+          techStack: 'Sitefinity(CMS), C#, jQuery, HTML, CSS',
+          src: require('../pictures/NASDAQ_HAYN-removebg-preview.png')
         }
       ]
       }

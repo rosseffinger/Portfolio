@@ -1,13 +1,15 @@
 <template>
   <div class="card">
         <div class="information">
-            <a v-bind:href="project.link" target="_blank">
-            <h1 class="title">{{ project.title }}</h1></a>
-            <a v-bind:href="project.github" target="_blank">
-                <font-awesome-icon icon="fa-brands fa-github" /></a>   
+            <div class="title-div">
+                <a v-bind:href="project.link" target="_blank">
+                <h1 class="title">{{ project.title }}</h1></a>
+                <a v-bind:href="project.github" target="_blank">
+                    <font-awesome-icon icon="fa-brands fa-github" /></a> 
+            </div>
             <p class="description"> {{ project.description }}</p>
             <p class="tech-stack"> 
-                Tech stack: {{project.techStack}}</p>
+                <span>Tech stack: </span>{{project.techStack}}</p>
         </div>
         <img :src="project.src" alt="" class="image vue-image">
     </div>
@@ -25,10 +27,15 @@ export default {
 div{
     color: var(--white);
 }
+span{
+    color: var(--light-grey);
+    font-weight: bolder;
+    font-size: 1.6vw;
+}
 .card{
     display: flex;
     flex-direction: column;
-    border-radius: .25rem;
+    border-radius: .50rem;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -54,10 +61,44 @@ div{
     transform: scale(1.025);
     transition: 200ms transform ease-in-out;
 }
+.title-div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.fa-github{
+    height: 35px;
+}
 @media screen and (min-width: 1200px){
     .card{
         max-width: 600px;
     }
+}
+@media screen and (max-width: 550px){
+  span{
+    font-size: 3.6vw !important;
+  }
+}
+@media screen and (min-width: 600px){
+  span{
+    font-size: 3.2vw !important;
+  }
+}
+@media screen and (min-width: 800px){
+
+  span{
+    font-size: 2.6vw !important;
+  }
+}
+@media screen and (min-width: 900px){
+  span{
+    font-size: 2.1vw !important;
+  }
+}
+@media screen and (min-width: 1200px){
+  span{
+    font-size: 1.6vw !important;
+  }
 }
 /* .projects-div-widget{
     display: flex;

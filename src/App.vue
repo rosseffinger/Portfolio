@@ -95,25 +95,40 @@ a{
   body{
     font-size: 3.5vw;
   }
+  span{
+    font-size: 3.6vw !important;
+  }
 }
 @media screen and (min-width: 600px){
   body{
     font-size: 3vw;
+  }
+  span{
+    font-size: 3.2vw !important;
   }
 }
 @media screen and (min-width: 800px){
   body{
     font-size: 2.5vw;
   }
+  span{
+    font-size: 2.6vw !important;
+  }
 }
 @media screen and (min-width: 900px){
   body{
     font-size: 2vw;
   }
+  span{
+    font-size: 2.1vw !important;
+  }
 }
 @media screen and (min-width: 1200px){
   body{
     font-size: 1.5vw;
+  }
+  span{
+    font-size: 1.6vw !important;
   }
 }
 </style>
