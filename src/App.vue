@@ -8,6 +8,12 @@
   </div>
 </template>
 
+<script type="text/javascript">
+  (function() {
+    // https://dashboard.emailjs.com/admin/account
+    emailjs.init('YOUR_PUBLIC_KEY');
+  })();
+    </script>
 <script>
 import Home from './views/Home.vue'
 import About from './views/About.vue'
@@ -85,11 +91,13 @@ a{
 .projects{
   background-color: inherit;
   width: 100vw;
+  min-height: 100vh;
 
 }
 .contact{
   background-color: var(--black);
   width: 100vw;
+  min-height: 100vh;
 }
 @media screen and (max-width: 550px){
   body{
