@@ -87,23 +87,4 @@ export default {
   overflow:hidden;
 
 }
-
-/* .projects{
-  display: flex;
-  flex-direction: row;
-  color: var(--white);
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-.project-div{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  gap: 15px;
-}
-.project-div:first-of-type{
-  margin-top: 50px;
-} */
 </style>

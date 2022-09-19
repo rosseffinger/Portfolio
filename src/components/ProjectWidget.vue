@@ -69,123 +69,12 @@ span{
 .fa-github{
     height: 35px;
 }
+.project-div .card:nth-child(2) > .information > .title-div > a{
+    text-decoration: none !important;
+}
 @media screen and (min-width: 1200px){
     .card{
         max-width: 600px;
     }
 }
-@media screen and (max-width: 550px){
-  span{
-    font-size: 3.6vw !important;
-  }
-}
-@media screen and (min-width: 600px){
-  span{
-    font-size: 3.2vw !important;
-  }
-}
-@media screen and (min-width: 800px){
-
-  span{
-    font-size: 2.6vw !important;
-  }
-}
-@media screen and (min-width: 900px){
-  span{
-    font-size: 2.1vw !important;
-  }
-}
-@media screen and (min-width: 1200px){
-  span{
-    font-size: 1.6vw !important;
-  }
-}
-/* .projects-div-widget{
-    display: flex;
-    justify-content: center;
-    gap:10px;
-}
-.upper-level-div{
-    display: flex;
-    flex-direction: column;
-    margin:15px;
-    background-color: var(--light-red);
-    opacity: .9;
-    width:90vw;
-    max-width:90vw;
-    width: 75vw;
-    min-width:25vw;
-}
-.mid-level-div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5px 10px;
-}
-.low-level-div{
-    display: flex;
-    gap:15px;
-    align-content: center;
-    align-items: center;
-}
-.description{
-    width:100%;
-        }
-.tech-stack{
-    width:100%;
-    text-align: left;
-}
-.image{
-    padding-bottom: 5px;
-}
-.project-div .projects-div-widget:nth-child(2) > .upper-level-div > .mid-level-div > .low-level-div > a{
-    text-decoration: none !important;
-
-}
-.fa-github{
-    height: 35px;
-}  */
-/* 
-
-
-/* img[src='/img/vue-transparent-removebg-preview.5282018c.png']{
-    align-self: center;
-}
-.projects-div-widget{
-    font-size: 1.1rem;
-    display: flex;
-    flex-direction: row;
-    padding: 1rem 1rem;
-    margin-right:8px;
-    background: var(--light-red);
-    box-shadow: 5px 5px 5px 0px rgb(158,158,158, .5);
-    max-width: 28vw;
-    max-height: 28vw;
-    min-height: 28vw;
-    min-width: 28vw;
-    position: relative;
-}
-.title{
-    margin-bottom:10px;
-}
-.description{
-    margin-bottom:5px;
-    padding-bottom: 5px;
-}
-.tech-stack{
-    margin-bottom: 5px;
-    padding-bottom: 5px;
-}
-.upper-level-div{
-    display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-    width: 30vw;
-    /* box-shadow: 5px 5px 5px 0px rgb(244,67,54, .5);
-}
-.low-level-div{
-    display: flex;
-    align-items:center;
-    gap: 20px
-} */
 </style>
