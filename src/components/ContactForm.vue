@@ -26,7 +26,6 @@
         <button type="submit" class="submit-button" >Submit</button>
             </form>
         </div>
-    <div id="status" class="success">Success Message</div>
   </div>
 </template>
 
