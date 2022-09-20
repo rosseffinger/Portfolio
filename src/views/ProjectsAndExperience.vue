@@ -32,6 +32,7 @@ export default {
           techStack: 'HTML, CSS, JS, Node.js',
           description: 'Song Sync is a web application that allows real time synchronization of lyrics across devices.',
           github: 'https://github.com/SongSync-Lyrics/SongSyncCore',
+          pictureLink: 'https://www.songsync.org/',
           src: require('../pictures/SongSync.png')
         },        
         {
@@ -40,6 +41,7 @@ export default {
           description: 'I built this website using Vue.js, and plan on constantly updating it with my new projects as well as fresh styling.',
           techStack: 'HTML, CSS, Vue.js',
           github: 'https://github.com/rosseffinger/Portfolio',
+          pictureLink: 'https://github.com/rosseffinger/Portfolio',
           src: require('../pictures/vue-transparent-removebg-preview.png')
         }
       ],
@@ -50,14 +52,16 @@ export default {
           description: 'Developing microservices and RESTful APIs via Java Spring Boot',
           company: 'Infosys',
           techStack: 'Java',
+          pictureLink: 'https://www.infosys.com/',
           src: require('../pictures/in-removebg-preview.png')
         },
         {
           id: 2,
           title: 'Web Development Intern',
-          description: 'Full stack development; created widgets and updated styles for site.',
+          description: 'Full stack development; created widgets and updated styles for site. Assisted with conversion of Telerik UI to bootstrap',
           company: 'Haynes International',
           techStack: 'Sitefinity(CMS), C#, jQuery, HTML, CSS',
+          pictureLink: 'https://haynesintl.com/',
           src: require('../pictures/NASDAQ_HAYN-removebg-preview.png')
         }
       ]

@@ -41,12 +41,14 @@ export default {
 :root{
   --red: #F44336;
   --light-red: #ce1d2a;
+  --dark-red: #86131b;
   --red-text: #b71c1c;
   --grey: #9e9e9e;
   --white: #FFFFFF;
   --black: #111111;
   --light-black: #181818;
   --light-grey: #1e1e1e
+
 }
 body{
   margin: 0;
@@ -99,7 +101,7 @@ a{
   width: 100vw;
   min-height: 100vh;
 }
-@media screen and (max-width: 550px){
+@media screen and (max-width: 600px){
   body{
     font-size: 3.5vw;
   }

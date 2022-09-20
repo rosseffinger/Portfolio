@@ -11,7 +11,7 @@
             <p class="tech-stack"> 
                 <span>Tech stack: </span>{{project.techStack}}</p>
         </div>
-        <img :src="project.src" alt="" class="image vue-image">
+        <a :href="project.pictureLink" target="_blank"><img :src="project.src" alt="" class="image vue-image"></a>
     </div>
 </template>
 
@@ -47,7 +47,7 @@ span{
 .information{
     padding:1rem;
 }
-.card > img{
+.card > a > img{
     overflow: hidden;
     display: block;
     width: 100%;
@@ -57,7 +57,7 @@ span{
     object-position: center;
     padding:1rem;
 }
-.card > img:hover{
+.card > a > img:hover{
     transform: scale(1.025);
     transition: 200ms transform ease-in-out;
 }

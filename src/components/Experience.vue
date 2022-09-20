@@ -7,7 +7,7 @@
             <span>Tech stack: </span> {{experience.techStack}}</p>
         <p class="company"> <span>Company: </span>{{ experience.company }}</p>
     </div>
-    <img :src="experience.src" alt="" />
+    <a :href="experience.pictureLink" target="_blank"><img :src="experience.src" alt="" /></a>
   </div>
 </template>
 
@@ -42,7 +42,7 @@ span{
 .upper-level-div{
     padding:1rem;
 }
-.card > img{
+.card > a > img{
     overflow: hidden;
     display: block;
     width: 100%;
@@ -52,7 +52,7 @@ span{
     object-position: center;
     padding:1rem;
 }
-.card > img:hover{
+.card > a > img:hover{
     transform: scale(1.025);
     transition: 200ms transform ease-in-out;
 }
