@@ -34,7 +34,7 @@
           </div>
 
       </div>
-      <div class="picture-div">
+      <div class="picture-div" v-scrollanimate>
         <img src='../pictures/Ross-Effinger-head.jpg' />
       </div>
     </div>

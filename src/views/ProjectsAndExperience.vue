@@ -70,7 +70,30 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.before-enter{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all .9s;
+}
+.before-enter:nth-child(2){
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition-delay: .5s;
+  transition: all .9s;
+}
+.enter:nth-child(2){
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+} 
+.enter{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+} 
 .projects{
   margin-top:50px;
   display: grid;

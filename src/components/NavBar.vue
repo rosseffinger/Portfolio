@@ -1,6 +1,6 @@
 <template>
 <nav class="navbar">
-    <div class="title">Ross Effinger</div>
+    <a href="."><div class="title">Ross Effinger</div></a>
     <button class="toggle-button" @click="toggleMenu">
     <span class="hamburger"></span>
     </button>
@@ -116,7 +116,9 @@ export default {
 }
 .navbar-links li{
     list-style: none;
-
+}
+.navbar a {
+    text-decoration: none;
 }
 .navbar-links li a{
     text-decoration: none;
@@ -221,8 +223,10 @@ a:hover{
         transform: translate(10px, 10px);
     }
 }
-.v-toolbar__content{
-    position: relative;
+@media screen and (max-width: 550px){
+    .title{
+        font-size: 4.5vw;
+    }
 }
 @media screen and (max-width: 1150px){
     .theme--dark.v-btn{

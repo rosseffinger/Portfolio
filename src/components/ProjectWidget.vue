@@ -37,7 +37,6 @@ span{
     flex-direction: column;
     border-radius: .50rem;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
     background-color: var(--light-red);
     box-shadow: 0 2px 5px rgba(0,0,0,.2);
