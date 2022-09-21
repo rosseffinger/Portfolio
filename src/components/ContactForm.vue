@@ -122,7 +122,7 @@ button:hover{
     background-color: var(--light-grey);
     box-shadow: 0 2px 5px rgba(0,0,0,.2);
     overflow: hidden;
-    max-width: 400px;
+    max-width: 500px;
     transition: 1s;
     position: absolute;
 }
