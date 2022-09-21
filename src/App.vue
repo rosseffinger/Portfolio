@@ -1,25 +1,22 @@
 <template>
   <div id="App" class="app">
+    <HeadInject></HeadInject>
     <NavBar></NavBar>
     <Home></Home>
     <About></About>
     <ProjectsAndExperience></ProjectsAndExperience>
-    <Contact ></Contact>
+    <Contact></Contact>
   </div>
 </template>
 
-<script type="text/javascript">
-  (function() {
-    // https://dashboard.emailjs.com/admin/account
-    emailjs.init('YOUR_PUBLIC_KEY');
-  })();
-    </script>
+
 <script>
 import Home from './views/Home.vue'
 import About from './views/About.vue'
 import ProjectsAndExperience from './views/ProjectsAndExperience.vue'
 import Contact from './views/Contact.vue'
 import NavBar from './components/NavBar.vue'
+import HeadInject from './components/HeadInject.vue'
 export default {
   name: 'App',
   components:{
@@ -28,6 +25,7 @@ export default {
     ProjectsAndExperience,
     Contact,
     NavBar,
+    HeadInject,
   },
 
   data: () => ({
