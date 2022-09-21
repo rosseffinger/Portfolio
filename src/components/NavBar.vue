@@ -1,11 +1,9 @@
 <template>
 <nav class="navbar">
     <div class="title">Ross Effinger</div>
-    <a href="#" class="toggle-button" @click="toggleMenu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </a>
+    <button class="toggle-button" @click="toggleMenu">
+    <span class="hamburger"></span>
+    </button>
     <div class="navbar-links">
         <ul>
             <li>
@@ -27,6 +25,33 @@
     </div>
 
 </nav>
+
+<!-- <nav class="navbar">
+    <div class="title">Ross Effinger</div>
+    <button class="toggle-button" @click="toggleMenu">
+        <span class="hamburger"></span>
+    </button>
+    <div class="navbar-links">
+        <ul>
+            <li>
+                <a @click="scroll('home')">Home</a>
+            </li>            
+            <li>
+                <a @click="scroll('about')">About</a>
+            </li>               
+            <li>
+                <a @click="scroll('projects')">Projects</a>
+            </li>            
+            <li>
+                <a @click="linkToPage">Resume</a>
+            </li>              
+             <li>
+                <a @click="scroll('contact')">Contact</a>
+            </li>                    
+        </ul>
+    </div>
+
+</nav> -->
 </template>
 
 <script>
@@ -46,7 +71,8 @@ export default {
         toggleMenu(){
             let toggleButton = document.getElementsByClassName('toggle-button')[0]
             let navbarLinks = document.getElementsByClassName('navbar-links')[0]
-            $(navbarLinks).toggleClass('active');
+            let navBar = document.getElementsByClassName('navbar')[0]
+            document.body.classList.toggle('nav-open')
         }
     }
 }
@@ -56,6 +82,15 @@ export default {
 .app-bar {
     position: fixed !important;
 }
+.enter-from{
+  opacity: 0;
+}
+.enter-to{
+  opacity: 1;
+}
+.enter-active{
+  transition: opacity 2s ease;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -63,6 +98,10 @@ export default {
     color: var(--white);
     width: 100%;
     margin-right: 1rem;
+    background: var(--light-black);
+    margin: 0;
+    padding-right: 10px;
+    z-index: 100;
 }
 .title{
     font-size: 1.8vw;
@@ -91,37 +130,85 @@ export default {
 }
 .toggle-button{
     position: absolute;
-    top: .75rem;
-    right: 1rem;
+    top: 2em;
+    right: 0;
+    background: var(--white);
+    padding: 1em .5em;
+    border: 0;
+    border-radius: .5rem;
+    z-index: 100;
     display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
 }
-.toggle-button .bar{
-    height: 3px;
-    width: 100%;
-    background-color: var(--white);
-    border-radius: .50rem;
+.hamburger{
+    display: block;
+    position: relative;
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  width: 2em;
+  height: 3px;
+  background: var(--light-red);
+  transition: transform 350ms ease-in-out, opacity 200ms linear;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+.hamburger::before { 
+    bottom: 6px; 
+    }
+.hamburger::after { 
+    top: 6px;
+    }
+/* .nav-open .navbar {
+  transform: translateX(0);
+} */
+.nav-open .hamburger {
+  transform: rotate(45deg);
+}
+
+.nav-open .hamburger::before {
+  opacity: 0;
+}
+
+.nav-open .hamburger::after {
+  transform: rotate(90deg) translate(-6px);
 }
 a:hover{
     cursor: pointer;
 }
-@media screen and (max-width: 750px){
+@media screen and (max-width: 764px){
     .toggle-button{
         display: flex;
-
+        position: absolute;
+        top:0;
+        right: 0;
+        margin: 1rem;
+        }
+    .nav-open .navbar-links{
+        transform: translateX(0%);
+        transition: all .5s ease-in-out;
     }
     .navbar-links{
-        display: none;
+        transform: translateX(100%);
         width: 100%;
+        position: absolute;
+        height: max-content;
+        background: var(--light-black);
+        transition: all .5s ease-in-out;
     }
     .navbar{
         flex-direction: column;
         align-items: flex-start;
-
-    }
+        transition: all .5s ease;
+        margin: 0;
+        padding: 0;
+        height: 8vh;
+    } 
     .navbar-links ul{
         flex-direction: column;
         width: 100%;
@@ -129,21 +216,22 @@ a:hover{
     .navbar-links li{
         text-align: center;
     }
-    .navbar-links.active{
-        display: flex;
+    .title{
+        font-size: 3.6vw;
+        transform: translate(10px, 10px);
     }
 }
 .v-toolbar__content{
     position: relative;
 }
-    @media screen and (max-width: 1150px){
-        .theme--dark.v-btn{
-            font-size: 1.8vw !important;
-        }
+@media screen and (max-width: 1150px){
+    .theme--dark.v-btn{
+        font-size: 1.8vw !important;
     }
-    @media screen and (max-width: 900px){
-        .theme--dark.v-btn{
-            font-size: 1vw !important;
-        }
+}
+@media screen and (max-width: 900px){
+    .theme--dark.v-btn{
+        font-size: 1vw !important;
     }
+}
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="home" id="home">
+    <div class="home" id="home" v-scrollanimate>
             <div class="top-level-div">
             <div class="information-div">
                 <h3 class="title">Hello, I'm Ross Effinger</h3>

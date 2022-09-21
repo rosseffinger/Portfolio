@@ -1,11 +1,11 @@
 <template>
   <div class="projects" id="projects">
     <div class="project-div">
-      <ProjectWidget
+      <ProjectWidget v-scrollanimate
       v-for="project in projects" :key="project.id" :project="project" /> 
     </div>
     <div class="project-div">
-      <ExperienceWidget
+      <ExperienceWidget v-scrollanimate
       v-for="experience in experiences" :key="experience.id" :experience="experience" /> 
     </div>
 
