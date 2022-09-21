@@ -4,7 +4,7 @@
             <p class="information">
                 Think I'd be a good fit for you team? Email me and here and I will get back to you!
             </p>
-        <form ref="form" @submit.prevent="sendEmail" @submit='checkMark'>
+        <form ref="form" @submit.prevent="sendEmail">
         <div class="form-group first-group" > 
             <label for="fullName">Full Name: </label>
             <input type="text" v-model="fullName" id="fullName" name="fullName" 
@@ -15,7 +15,6 @@
             <input type="email"
                 v-model="email_id"
                 id="email_id" name="email_id" placeholder="Your email address" required>
-
         </div>
         <div class="form-group body-group">
             <label for="message" >Message:</label>
@@ -23,7 +22,7 @@
             v-model="message"
             id="message" name="message" placeholder="Body of email"></textarea>
         </div>
-        <button @click="checkMark" type="submit" class="submit-button" >Submit</button>
+        <button type="submit" class="submit-button" >Submit</button>
             </form>
         <svg id="checkMarkSVG" class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
             <circle id="checkCircle" class="" cx="26" cy="26" r="25" fill="none"/>
@@ -32,9 +31,9 @@
         </div>
   </div>
 </template>
-
 <script>
 import emailjs from 'emailjs-com'
+import $ from 'jquery'
 export default {
     name:"ContactForm",
     data() {
@@ -45,6 +44,26 @@ export default {
         }
     },
     methods: {
+          checkMark(){
+            let checkMarkSVG = document.getElementById('checkMarkSVG')
+            let checkCircle = document.getElementById('checkCircle')
+            let checkPath = document.getElementById('checkPath')
+            checkMarkSVG.classList.add('checkmark');
+            checkMarkSVG.style.visibility='visible';
+            checkMarkSVG.style.position='relative';
+            checkMarkSVG.style.transition = '.5s';
+            checkMarkSVG.style.marginTop = 'auto';
+            checkCircle.classList.add('checkmark__circle');
+            checkPath.classList.add('checkmark__check');
+            setTimeout(function(){
+              checkMarkSVG.classList.remove('checkmark')
+              checkMarkSVG.style.visibility='hidden'
+              checkMarkSVG.style.position='absolute';
+              checkMarkSVG.style.transition = '.5s';
+              checkCircle.classList.remove('checkmark__circle');
+              checkPath.classList.remove('checkmark__check');  
+            }, 5000) 
+            },
         sendEmail(){
             try{
                 emailjs.sendForm("service_yij2a5o", "template_d6melwl", this.$refs.form ,"YWqi1DuNaV_TaYGTO"
@@ -56,18 +75,7 @@ export default {
         this.email_id = ""
         this.fullName= ""
         this.message = ""
-        },
-        checkMark(){
-            let checkMarkSVG = document.getElementById('checkMarkSVG')
-            let checkCircle = document.getElementById('checkCircle')
-            let checkPath = document.getElementById('checkPath')
-            checkMarkSVG.classList.add('checkmark');
-            checkMarkSVG.style.visibility='visible';
-            checkMarkSVG.style.position='relative';
-            checkMarkSVG.style.transition = '.5s';
-            checkCircle.classList.add('checkmark__circle');
-            checkPath.classList.add('checkmark__check');
-
+        this.checkMark()
         }
     }
 }
@@ -123,7 +131,7 @@ button:hover{
     box-shadow: 0 2px 5px rgba(0,0,0,.2);
     overflow: hidden;
     max-width: 500px;
-    transition: 1s;
+    transition: all 1s ease-in-out;
     position: absolute;
 }
 .card > p{
