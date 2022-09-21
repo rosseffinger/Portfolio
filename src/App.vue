@@ -4,7 +4,7 @@
     <Home></Home>
     <About></About>
     <ProjectsAndExperience></ProjectsAndExperience>
-    <Contact></Contact>
+    <Contact ></Contact>
   </div>
 </template>
 
@@ -28,13 +28,27 @@ export default {
     ProjectsAndExperience,
     Contact,
     NavBar,
-
-
   },
 
   data: () => ({
     //
   }),
+  methods: {
+    oberseve(){
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          console.log(entry)
+          if(entry.isIntersecting){
+            entry.target.classList.add('show');
+          }else{
+            entry.target.classList.remove('show');
+          }
+        })
+      })
+      const hiddenElements = document.querySelectorAll('.hidden')
+      hiddenElements.forEach((el) => observer.observe(el));
+    }
+  },
 };
 </script>
 <style>
@@ -50,13 +64,31 @@ export default {
   --light-grey: #1e1e1e
 
 }
+
+.before-enter{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all .9s;
+}
+.enter{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+} 
+@media(prefers-reduced-motion){
+  .before-enter{
+    transition: none;
+  }
+}
 body{
   margin: 0;
   padding:0;
   line-height: 1.4;
-  overflow-x: hidden !important;
+  overflow: hidden !important;
   font-size: 3vw;
   max-width: 100%;
+  position: relative;
 
 }
 h1{
@@ -73,6 +105,7 @@ a{
   width: 100vw;
   font-family: Roboto;
   background-color: var(--black);
+  overflow: hidden;
 }
 .app-bar{
   position: sticky !important;

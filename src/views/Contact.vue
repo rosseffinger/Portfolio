@@ -1,6 +1,6 @@
 <template>
   <div class="contact" id="contact">
-    <ContactForm></ContactForm>
+    <ContactForm v-scrollanimate></ContactForm>
   </div>
 </template>
 

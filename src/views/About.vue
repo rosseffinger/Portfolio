@@ -1,5 +1,5 @@
 <template>
-  <div class="about" id="about">
+  <div class="about" id="about" v-scrollanimate>
     <div class="top-level-div">
       <div class="mid-level-div">
         <h1 class="title">About-Me</h1>
