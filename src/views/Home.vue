@@ -76,7 +76,7 @@ export default {
         return {
             typeValue: '',
             typeStatus: true,
-            typeArray: ['Backend Developer', 'Transitioning to frontend'],
+            typeArray: ['A Backend Developer', 'Transitioning to frontend'],
             typingSpeed: 80,
             erasingSpeed: 60,
             newTextDelay: 800,

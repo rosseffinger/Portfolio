@@ -3,10 +3,13 @@
     <div class="top-level-div">
       <div class="mid-level-div">
         <h1 class="title">About Me</h1>
-          <p class="about-me-p">My name is Ross Effinger, and I enjoy developing swoftare for the internet.
+          <p class="about-me-p">My name is Ross Effinger, and I enjoy developing software for the internet.
         I found my joy for development back in high school with my introduction to computer science class. Fast 
-        forward 5 years and I have a degree in computer science and work as a full time java spring boot developer.
+        forward 5 years and I have a degree in computer science and work as a full time java spring boot developer. <br />
           </p>
+          <br/>
+          <a href="Resume.pdf" class="resume-link" target="_blank">Resume</a>
+          <br/>
           <br />
           <p class="about-me-p">I have studied various languages, here are my favorites in which I am most proficient:
           </p>
@@ -62,6 +65,14 @@ export default {
   display: grid;
   grid-template-rows: repeat(1, minmax(300px, 1fr));
   height: 100vh;
+}
+.resume-link{
+  color: var(--light-red);
+}
+br{
+  content: " ";
+  margin-top: 20px;
+  display: block;
 }
 .top-level-div{
   display: flex;
