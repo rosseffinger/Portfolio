@@ -70,7 +70,7 @@ export default {
       }
     },
     created() {
-      setTimeout(this.typeText, this.newTextDelay + 200);
+      setTimeout(this.typeText, this.newTextDelay + 100);
     },
     data: () => {
         return {
@@ -78,8 +78,8 @@ export default {
             typeStatus: true,
             typeArray: ['Backend Developer', 'Transitioning to frontend'],
             typingSpeed: 80,
-            erasingSpeed: 100,
-            newTextDelay: 2000,
+            erasingSpeed: 60,
+            newTextDelay: 1000,
             typeArrayIndex: 0,
             charIndex: 0
         }
