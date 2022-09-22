@@ -100,7 +100,7 @@ export default {
     margin-right: 1rem;
     background: var(--light-black);
     margin: 0;
-    padding-right: 10px;
+    padding-right: 50px;
     z-index: 100;
 
 }
