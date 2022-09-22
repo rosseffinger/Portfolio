@@ -2,7 +2,7 @@
     <div class="contact" id="contact">
         <div class="card">
             <p class="information">
-                Think I'd be a good fit for you team? Email me and here and I will get back to you!
+                Do you think I would be a good fit for you team? Email me here and I will get back to you!
             </p>
         <form ref="form" @submit.prevent="sendEmail">
         <div class="form-group first-group" > 

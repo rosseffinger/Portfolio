@@ -2,13 +2,13 @@
   <div class="about" id="about" v-scrollanimate>
     <div class="top-level-div">
       <div class="mid-level-div">
-        <h1 class="title">About-Me</h1>
-          <p class="about-me-p">I'm Ross, I like building developing things for the web, and I have a strong passion for development!
-        I found my joy for development back in high school with my introduction to computer science class, fast 
+        <h1 class="title">About Me</h1>
+          <p class="about-me-p">My name is Ross Effinger, and I enjoy developing swoftare for the internet.
+        I found my joy for development back in high school with my introduction to computer science class. Fast 
         forward 5 years and I have a degree in computer science and work as a full time java spring boot developer.
           </p>
           <br />
-          <p class="about-me-p">I've studied various skills and languages here are my favorites and my most proficient:
+          <p class="about-me-p">I have studied various languages, here are my favorites in which I am most proficient:
           </p>
           <br />
           <div class="list">
