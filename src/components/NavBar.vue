@@ -25,33 +25,6 @@
     </div>
 
 </nav>
-
-<!-- <nav class="navbar">
-    <div class="title">Ross Effinger</div>
-    <button class="toggle-button" @click="toggleMenu">
-        <span class="hamburger"></span>
-    </button>
-    <div class="navbar-links">
-        <ul>
-            <li>
-                <a @click="scroll('home')">Home</a>
-            </li>            
-            <li>
-                <a @click="scroll('about')">About</a>
-            </li>               
-            <li>
-                <a @click="scroll('projects')">Projects</a>
-            </li>            
-            <li>
-                <a @click="linkToPage">Resume</a>
-            </li>              
-             <li>
-                <a @click="scroll('contact')">Contact</a>
-            </li>                    
-        </ul>
-    </div>
-
-</nav> -->
 </template>
 
 <script>
@@ -101,7 +74,7 @@ export default {
     background: var(--light-black);
     margin: 0;
     padding-right: 50px;
-    z-index: 100;
+    z-index: 1000;
 
 }
 .title{

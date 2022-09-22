@@ -40,7 +40,7 @@ export default {
     background: white;
     width: 100%;
     left: 0;
-    z-index: 1000;
+    z-index: 100;
     
 }
 .inner-progress-bar{
@@ -50,11 +50,7 @@ export default {
     font-size: 2px;
     color: var(--light-red);
     background-color: var(--light-red);
-    z-index: 100000;
+    z-index: 100;
 }
-@media screen and (max-width: 764px){
-    .progress-bar {
-        display: none !important;
-    }
-}
+
 </style>

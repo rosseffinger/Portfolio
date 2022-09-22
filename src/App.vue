@@ -138,13 +138,14 @@ a{
 }
 @media screen and (min-width: 764px){
   html, body{
-    overflow-y: hidden;
-    overflow-x: hidden;
+/*     overflow-y: hidden;
+    overflow-x: hidden; */
+    contain: paint;
   }
 }
 @media screen and (max-width: 764px){
   html, body{
-    overflow-x: hidden;
+    contain: paint;
   }
 }
 @media screen and (max-width: 600px){
