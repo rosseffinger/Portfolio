@@ -121,7 +121,7 @@ ul li{
 }
 @media screen and (min-width: 1200px){
   .mid-level-div{
-    max-width: 600px;
+    max-width: 900px;
   }
 
 }
