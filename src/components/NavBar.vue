@@ -102,6 +102,7 @@ export default {
     margin: 0;
     padding-right: 10px;
     z-index: 100;
+
 }
 .title{
     font-size: 1.8vw;

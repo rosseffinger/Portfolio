@@ -133,6 +133,7 @@ button:hover{
     max-width: 500px;
     transition: all 1s ease-in-out;
     position: absolute;
+    margin: 15px;
 }
 .card > p{
     padding: 1rem 1rem 0rem 1rem;

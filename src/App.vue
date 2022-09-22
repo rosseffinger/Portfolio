@@ -2,10 +2,12 @@
   <div id="App" class="app">
     <HeadInject></HeadInject>
     <NavBar></NavBar>
+    <ProgressBar></ProgressBar>
     <Home></Home>
     <About></About>
     <ProjectsAndExperience></ProjectsAndExperience>
     <Contact></Contact>
+    <BackToTop></BackToTop>
   </div>
 </template>
 
@@ -17,6 +19,8 @@ import ProjectsAndExperience from './views/ProjectsAndExperience.vue'
 import Contact from './views/Contact.vue'
 import NavBar from './components/NavBar.vue'
 import HeadInject from './components/HeadInject.vue'
+import ProgressBar from './components/ProgressBar.vue'
+import BackToTop from './components/BackToTop.vue'
 export default {
   name: 'App',
   components:{
@@ -26,6 +30,9 @@ export default {
     Contact,
     NavBar,
     HeadInject,
+    ProgressBar,
+    BackToTop,
+  
   },
 
   data: () => ({
@@ -83,11 +90,9 @@ body{
   margin: 0;
   padding:0;
   line-height: 1.4;
-  overflow: hidden !important;
   font-size: 3vw;
   max-width: 100%;
   position: relative;
-
 }
 h1{
   line-height: 1.2 !important;}
@@ -103,7 +108,6 @@ a{
   width: 100vw;
   font-family: Roboto;
   background-color: var(--black);
-  overflow: hidden;
 }
 .app-bar{
   position: sticky !important;
@@ -131,6 +135,11 @@ a{
   background-color: var(--black);
   width: 100vw;
   min-height: 100vh;
+}
+@media screen and (max-width: 764px){
+  html, body{
+    overflow: hidden;
+  }
 }
 @media screen and (max-width: 600px){
   body{
