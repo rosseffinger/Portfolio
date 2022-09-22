@@ -138,7 +138,7 @@ a{
 }
 @media screen and (max-width: 764px){
   html, body{
-    overflow: hidden;
+    overflow-x: hidden;
   }
 }
 @media screen and (max-width: 600px){
