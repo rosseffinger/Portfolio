@@ -79,7 +79,7 @@ export default {
             typeArray: ['Backend Developer', 'Transitioning to frontend'],
             typingSpeed: 80,
             erasingSpeed: 60,
-            newTextDelay: 1000,
+            newTextDelay: 800,
             typeArrayIndex: 0,
             charIndex: 0
         }
