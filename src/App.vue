@@ -6,7 +6,7 @@
     <Home></Home>
     <About></About>
     <ProjectsAndExperience></ProjectsAndExperience>
-    <Contact></Contact>
+    <Contact ></Contact>
     <BackToTop></BackToTop>
   </div>
 </template>
@@ -135,6 +135,12 @@ a{
   background-color: var(--black);
   width: 100vw;
   min-height: 100vh;
+}
+@media screen and (min-width: 764px){
+  html, body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
 }
 @media screen and (max-width: 764px){
   html, body{

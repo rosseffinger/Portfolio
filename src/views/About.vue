@@ -113,7 +113,7 @@ ul li{
     object-fit: cover;
     max-height: 300px;
     object-position: center;
-    max-width: 400px;
+    max-width: 490px;
 }
 .title{
   color: var(--light-red);
@@ -125,7 +125,19 @@ ul li{
   }
 
 }
-
+@media screen and (min-width: 900px){
+  .top-level-div > .picture-div > img{
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    content: url('../pictures/Ross_Effinger.jpg');
+    min-height: 500px;
+    object-position: center;
+    max-width: 400px;
+}
+}
 /* .about{
   display: flex;
   flex-direction: row;
