@@ -114,6 +114,7 @@ export default {
 span.typed-text{
     font-size: inherit !important;
     font-family: inherit;
+    color: var(--white);
 }
 span.cursor.typing{
     animation: none;
@@ -138,7 +139,7 @@ span.cursor.typing{
     font-size: 5rem;
 }
 .occupation{
-    color: var(--white);
+    color: var(--light-red);
     font-size: 2rem;
     padding-left: 5px;
 }
