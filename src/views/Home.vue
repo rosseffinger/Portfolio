@@ -110,6 +110,7 @@ export default {
     width: 4px;
     background-color: var(--white);
     animation: cursorBlink 1s infinite;
+    font-size: inherit !important;
 }
 span.typed-text{
     font-size: inherit !important;
@@ -118,6 +119,7 @@ span.typed-text{
 }
 span.cursor.typing{
     animation: none;
+    font-size: inherit !important;
 }
 @keyframes cursorBlink{
     49% {background-color: var(--white);}
