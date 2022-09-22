@@ -49,7 +49,7 @@ export default {
         {
           id: 1,
           title: 'Associate Software Developer',
-          description: 'Developing microservices and RESTful APIs via Java Spring Boot',
+          description: 'Developing microservices and RESTful APIs via Java Spring Boot.',
           company: 'Infosys',
           techStack: 'Java',
           pictureLink: 'https://www.infosys.com/',
@@ -58,7 +58,7 @@ export default {
         {
           id: 2,
           title: 'Web Development Intern',
-          description: 'Full stack development; created widgets and updated styles for site. Assisted with conversion of Telerik UI to bootstrap',
+          description: 'Full stack development; created widgets and updated styles for site. Assisted with conversion of Telerik UI to bootstrap.',
           company: 'Haynes International',
           techStack: 'Sitefinity(CMS), C#, jQuery, HTML, CSS',
           pictureLink: 'https://haynesintl.com/',
