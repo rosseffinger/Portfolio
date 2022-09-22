@@ -1,6 +1,7 @@
 <template>
     <div class="home" id="home" v-scrollanimate>
             <div class="top-level-div">
+                <Icons></Icons>
             <div class="information-div">
                 <h3 class="title">Hello, I'm <span class="name">Ross Effinger</span></h3>
                 <h1 class="occupation">I am
@@ -28,8 +29,12 @@
 </template>
 
 <script>
+import Icons from '../components/Icons.vue'
 export default {
     name: 'Home',
+    components: {
+        Icons,
+    },
     methods: {
     scroll(refName){
         const element = document.getElementById(refName)
@@ -129,7 +134,7 @@ span.cursor.typing{
 .top-level-div {
     align-self: center;
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     color: white;
     justify-content: center;
     align-items: center;
