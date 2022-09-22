@@ -3,7 +3,9 @@
             <div class="top-level-div">
             <div class="information-div">
                 <h3 class="title">Hello, I'm Ross Effinger</h3>
-                <h1 class="occupation">I am a backend developer transitioning into front-end development</h1>
+                <h1 class="occupation">I am a
+                <span class="typed-text">{{typeValue}}</span>
+                <span class="cursor" :class="{'typing': typeStatus}">&nbsp;</span></h1>
                 <div class="links">
                     <a href="https://www.linkedin.com/in/ross-effinger/" target="_blank">
                         <font-awesome-icon icon="fa-brands fa-linkedin-in" />
@@ -27,19 +29,61 @@
 
 <script>
 export default {
-
     name: 'Home',
-        methods: {
-        scroll(refName){
-            const element = document.getElementById(refName)
-            element.scrollIntoView({behavior: "smooth"})
-        },
-        linkToPage(){
-            let page = 'Resume.pdf'
-            window.open(page)
+    methods: {
+    scroll(refName){
+        const element = document.getElementById(refName)
+        element.scrollIntoView({behavior: "smooth"})
+    },
+    linkToPage(){
+        let page = 'Resume.pdf'
+         window.open(page)
+    },
+    typeText() {
+        if(this.charIndex < this.typeArray[this.typeArrayIndex].length) {
+          if(!this.typeStatus)
+            this.typeStatus = true;
+          this.typeValue += this.typeArray[this.typeArrayIndex].charAt(this.charIndex);
+          this.charIndex += 1;
+          setTimeout(this.typeText, this.typingSpeed);
+        }
+        else {
+          this.typeStatus = false;
+          setTimeout(this.eraseText, this.newTextDelay);
+        }
+      },
+    eraseText() {
+        if(this.charIndex > 0) {
+          if(!this.typeStatus)
+            this.typeStatus = true;
+          this.typeValue = this.typeArray[this.typeArrayIndex].substring(0, this.charIndex - 1);
+          this.charIndex -= 1;
+          setTimeout(this.eraseText, this.erasingSpeed);
+        }
+        else {
+          this.typeStatus = false;
+          this.typeArrayIndex += 1;
+          if(this.typeArrayIndex >= this.typeArray.length)
+            this.typeArrayIndex = 0;
+          setTimeout(this.typeText, this.typingSpeed + 1000);
+        }
+      }
+    },
+    created() {
+      setTimeout(this.typeText, this.newTextDelay + 200);
+    },
+    data: () => {
+        return {
+            typeValue: '',
+            typeStatus: true,
+            typeArray: ['Backend Developer', 'Transitioning to frontend'],
+            typingSpeed: 80,
+            erasingSpeed: 100,
+            newTextDelay: 2000,
+            typeArrayIndex: 0,
+            charIndex: 0
         }
     }
-    
 }
 </script>
 
@@ -56,7 +100,28 @@ export default {
 .home{
     margin: 15px;
     padding:20px;
-
+}
+.typed-text{
+    padding-left: 5px;
+}
+.cursor{
+    display:inline-block;
+    margin-left: 3px;
+    width: 4px;
+    background-color: var(--white);
+    animation: cursorBlink 1s infinite;
+}
+span.typed-text{
+    font-size: inherit !important;
+    font-family: inherit;
+}
+span.cursor.typing{
+    animation: none;
+}
+@keyframes cursorBlink{
+    49% {background-color: var(--white);}
+    50% {background-color: transparent;}
+    100%{background-color: transparent;}
 }
 .top-level-div {
     align-self: center;
