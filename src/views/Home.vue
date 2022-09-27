@@ -28,8 +28,12 @@
 </template>
 
 <script>
+import Icons from '../components/Icons.vue'
 export default {
     name: 'Home',
+    components: {
+        Icons,
+    },
     methods: {
     scroll(refName){
         const element = document.getElementById(refName)
@@ -129,7 +133,7 @@ span.cursor.typing{
 .top-level-div {
     align-self: center;
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     color: white;
     justify-content: center;
     align-items: center;
