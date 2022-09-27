@@ -21,6 +21,7 @@ import NavBar from './components/NavBar.vue'
 import HeadInject from './components/HeadInject.vue'
 import ProgressBar from './components/ProgressBar.vue'
 import BackToTop from './components/BackToTop.vue'
+import Loader from './components/Loader.vue'
 export default {
   name: 'App',
   components:{
@@ -32,6 +33,7 @@ export default {
     HeadInject,
     ProgressBar,
     BackToTop,
+    Loader,
   
   },
 

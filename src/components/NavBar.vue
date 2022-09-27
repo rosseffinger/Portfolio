@@ -35,7 +35,6 @@ export default {
         scroll(refName){
             const element = document.getElementById(refName)
             element.scrollIntoView({behavior: "smooth"})
-
         },
         linkToPage(){
             let page = 'Resume.pdf'
