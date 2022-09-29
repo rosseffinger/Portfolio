@@ -3,7 +3,7 @@
             <div class="top-level-div">
             <div class="information-div">
                 <h3 class="title">Hello, I'm <span class="name">Ross Effinger</span></h3>
-                <h1 class="occupation">I am
+                <h1 class="occupation">I am a
                 <span class="typed-text">{{typeValue}}</span>
                 <span class="cursor" :class="{'typing': typeStatus}">&nbsp;</span></h1>
                 <div class="links">
@@ -80,9 +80,9 @@ export default {
         return {
             typeValue: '',
             typeStatus: true,
-            typeArray: ['A Backend Developer', 'Transitioning to frontend'],
-            typingSpeed: 80,
-            erasingSpeed: 60,
+            typeArray: ['Backend Developer', 'Frontend Developer', 'Self Learner'],
+            typingSpeed: 60,
+            erasingSpeed: 40,
             newTextDelay: 800,
             typeArrayIndex: 0,
             charIndex: 0
