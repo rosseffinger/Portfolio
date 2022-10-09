@@ -123,7 +123,6 @@ ul li{
   .mid-level-div{
     max-width: 900px;
   }
-
 }
 @media screen and (min-width: 900px){
   .top-level-div > .picture-div > img{
@@ -136,6 +135,9 @@ ul li{
     min-height: 500px;
     object-position: center;
     max-width: 400px;
+}
+.mid-level-div{
+  max-width:600px;
 }
 }
 /* .about{

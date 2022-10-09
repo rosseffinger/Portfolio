@@ -76,4 +76,9 @@ span{
         max-width: 600px;
     }
 }
+@media screen and (min-width: 900px){
+    .card{
+        max-width: 500px;
+    }
+}
 </style>

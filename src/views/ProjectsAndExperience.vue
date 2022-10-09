@@ -112,6 +112,7 @@ export default {
   width: 100vw;
   padding: 0px 15px;
   overflow:hidden;
+  margin-top: 10px;
 
 }
 </style>
