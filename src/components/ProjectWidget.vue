@@ -11,7 +11,7 @@
             <p class="tech-stack"> 
                 <span>Tech stack: </span>{{project.techStack}}</p>
         </div>
-        <a :href="project.pictureLink" target="_blank"><img :src="project.src" alt="" class="image vue-image" ></a>
+        <a :href="project.pictureLink" target="_blank"><img :src="project.src" :alt="project.alt" class="image vue-image"></a>
     </div>
 </template>
 

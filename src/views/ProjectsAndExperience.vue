@@ -33,7 +33,8 @@ export default {
           description: 'Song Sync is a web application that allows real time synchronization of lyrics across devices.',
           github: 'https://github.com/SongSync-Lyrics/SongSyncCore',
           pictureLink: 'https://www.songsync.org/',
-          src: require('../pictures/SongSync.png')
+          src: require('../pictures/SongSync.png'),
+          alt: 'Screenshot of SongSync Website'
         },        
         {
           id: 2,
@@ -42,7 +43,8 @@ export default {
           techStack: 'HTML, CSS, Vue.js',
           github: 'https://github.com/rosseffinger/Portfolio',
           pictureLink: 'https://github.com/rosseffinger/Portfolio',
-          src: require('../pictures/vue-transparent-removebg-preview.png')
+          src: require('../pictures/vue-transparent-removebg-preview.png'),
+          alt: 'Vue.js logo'
         }
       ],
       experiences:[
@@ -53,7 +55,8 @@ export default {
           company: 'Infosys',
           techStack: 'Java',
           pictureLink: 'https://www.infosys.com/',
-          src: require('../pictures/in-removebg-preview.png')
+          src: require('../pictures/in-removebg-preview.png'),
+          alt: 'Infosys Logo'
         },
         {
           id: 2,
@@ -62,7 +65,8 @@ export default {
           company: 'Haynes International',
           techStack: 'Sitefinity(CMS), C#, jQuery, HTML, CSS',
           pictureLink: 'https://haynesintl.com/',
-          src: require('../pictures/NASDAQ_HAYN-removebg-preview.png')
+          src: require('../pictures/NASDAQ_HAYN-removebg-preview.png'),
+          alt: 'Haynes International Logo'
         }
       ]
       }

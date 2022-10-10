@@ -7,7 +7,7 @@
             <span>Tech stack: </span> {{experience.techStack}}</p>
         <p class="company"> <span>Company: </span>{{ experience.company }}</p>
     </div>
-    <a :href="experience.pictureLink" target="_blank"><img :src="experience.src" alt="" /></a>
+    <a :href="experience.pictureLink" target="_blank"><img :src="experience.src" :alt="experience.alt" /></a>
   </div>
 </template>
 
