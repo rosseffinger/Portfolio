@@ -14,14 +14,17 @@ import '@fortawesome/fontawesome-free/js/all.js'
 import ScrollAnimate from './directives/animationOnScroll'
 import VueHead from 'vue-head'
 import Progressbar from 'vuejs-progress-bar'
+import generateMetaData from './directives/generateMetaData'
 // eslint-disable-next-line import/no-extraneous-dependencies
 
 library.add(faUserSecret, faTwitter, faLinkedin,faLinkedinIn, faGithub, faFileAlt)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.directive('scrollanimate', ScrollAnimate);
+Vue.directive('generateMetaData', generateMetaData)
 Vue.config.productionTip = false
 Vue.use(VueHead)
 Vue.use(Progressbar)
+
 
 new Vue({
   vuetify,

@@ -1,6 +1,5 @@
 <template>
-  <div id="App" class="app">
-    <HeadInject></HeadInject>
+  <div id="App" class="app" generateMetaData>
     <NavBar></NavBar>
     <ProgressBar></ProgressBar>
     <LoadingScreen></LoadingScreen>
@@ -22,7 +21,6 @@ import NavBar from './components/NavBar.vue'
 import HeadInject from './components/HeadInject.vue'
 import ProgressBar from './components/ProgressBar.vue'
 import BackToTop from './components/BackToTop.vue'
-import Loader from './components/Loader.vue'
 import LoadingScreen from './views/LoadingScreen.vue'
 export default {
   name: 'App',
