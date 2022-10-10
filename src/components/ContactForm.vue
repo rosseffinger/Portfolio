@@ -22,7 +22,7 @@
             v-model="message"
             id="message" name="message" placeholder="Body of email"></textarea>
         </div>
-        <button type="submit" class="submit-button" >Submit</button>
+        <button type="submit" class="submit-button">Submit</button>
             </form>
         <svg id="checkMarkSVG" class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
             <circle id="checkCircle" class="" cx="26" cy="26" r="25" fill="none"/>
@@ -114,7 +114,7 @@ button{
     background-size: 100% 200%;
     background-position: 0% 0%;
 }
-button:hover{
+button:hover,  button:focus{
     /* background-color: #e23642; */
     transition: .5s;
     color: var(--white);
