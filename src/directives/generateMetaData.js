@@ -2,7 +2,7 @@
 
 let metaName = document.createElement('meta')
 metaName.setAttribute('name', 'description')
-metaName.setAttribute('content', 'Ross Effinger Portfolio Website! Come see what I can do!')
+metaName.setAttribute('content', 'Software Developer, Developing things for the web.')
 
 let metaDescription = document.createElement('meta')
 metaDescription.setAttribute('name', 'keywords')
