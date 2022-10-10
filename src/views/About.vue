@@ -124,6 +124,7 @@ ul li{
     max-width: 900px;
   }
 }
+
 @media screen and (min-width: 900px){
   .top-level-div > .picture-div > img{
     overflow: hidden;
@@ -138,6 +139,11 @@ ul li{
 }
 .mid-level-div{
   max-width:600px;
+}
+@media screen and (min-width: 1200px){
+  .mid-level-div{
+    max-width: 900px;
+  }
 }
 }
 /* .about{

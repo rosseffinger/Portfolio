@@ -71,14 +71,15 @@ span{
 .project-div .card:nth-child(2) > .information > .title-div > a{
     text-decoration: none !important;
 }
-@media screen and (min-width: 1200px){
-    .card{
-        max-width: 600px;
-    }
-}
+
 @media screen and (min-width: 900px){
     .card{
         max-width: 500px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .card{
+        max-width: 600px;
     }
 }
 </style>

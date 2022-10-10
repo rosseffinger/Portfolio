@@ -59,14 +59,15 @@ span{
 .fa-github{
     height: 35px;
 }
-@media screen and (min-width: 1200px){
-    .card{
-        max-width: 600px;
-    }
-}
+
 @media screen and (min-width: 900px){
     .card{
         max-width: 500px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .card{
+        max-width: 600px;
     }
 }
 </style>

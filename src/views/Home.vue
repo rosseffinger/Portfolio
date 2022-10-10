@@ -80,7 +80,7 @@ export default {
         return {
             typeValue: '',
             typeStatus: true,
-            typeArray: ['Backend Developer', 'Frontend Developer', 'Self Learner'],
+            typeArray: ['Frontend Developer', 'Backend Developer', 'Self Learner'],
             typingSpeed: 60,
             erasingSpeed: 40,
             newTextDelay: 800,
