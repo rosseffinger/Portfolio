@@ -36,8 +36,8 @@ export default {
         align-items: center;
     }
     .circle{
-        height: 50px;
-        width: 50px;
+        height: 75px;
+        width: 75px;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -46,15 +46,15 @@ export default {
     }
     .fa-r{
         color: white;
+        font-size: 1.5em;
     }
     .square-loader{
-        height: 60px;
-        width: 60px;
+        height: 80px;
+        width: 80px;
         background: var(--black);
         animation: square 2s linear 0s 1;
         /* transform: translateX(-150px); */
         position: absolute;
-        
     }
     @keyframes square{
         from{
@@ -62,6 +62,21 @@ export default {
         }
         to{
             transform: translateX(-150px);
+        }
+    }
+    @media screen and(max-width: 900px) {
+        .fa-r{
+            font-size: 3.5vw !important;
+        }
+    }
+    @media screen and(max-width: 600px) {
+        .fa-r{
+            font-size: 4.5vw !important;
+        }
+    }
+    @media screen and(max-width: 500px) {
+        .fa-r{
+            font-size: 5.5vw !important;
         }
     }
 </style>
