@@ -52,7 +52,7 @@ span{
     object-position: center;
     padding:1rem;
 }
-.card > a > img:hover{
+.card > a > img:hover, .card > a:focus{
     transform: scale(1.025);
     transition: 200ms transform ease-in-out;
 }

@@ -57,5 +57,6 @@ export default {
 }
 .back-to-top:hover{
     cursor: pointer;
+    transform: scale(1.2);
 }
 </style>
