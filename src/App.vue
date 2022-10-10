@@ -126,6 +126,7 @@ a{
 .about{
   background-color: inherit;
   width: 100vw;
+  min-height: 125vh;
 }
 .projects{
   background-color: inherit;
@@ -188,6 +189,11 @@ a{
   }
   span{
     font-size: 1.6vw !important;
+  }
+}
+@media screen and (max-height: 415px){
+  .about{
+    height: 250vh !important;
   }
 }
 </style>

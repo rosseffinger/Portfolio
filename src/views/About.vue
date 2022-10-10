@@ -145,6 +145,8 @@ ul li{
     max-width: 900px;
   }
 }
+
+
 }
 /* .about{
   display: flex;

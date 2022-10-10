@@ -238,4 +238,9 @@ a{
         margin: 0 1rem; 
     }
 }
+@media screen and (max-height: 400px) {
+    .title{
+        font-size: 3rem !important;
+    }
+}
 </style>
