@@ -3,10 +3,11 @@
     <HeadInject></HeadInject>
     <NavBar></NavBar>
     <ProgressBar></ProgressBar>
+    <LoadingScreen></LoadingScreen>
     <Home></Home>
     <About></About>
     <ProjectsAndExperience></ProjectsAndExperience>
-    <Contact ></Contact>
+    <Contact></Contact>
     <BackToTop></BackToTop>
   </div>
 </template>
@@ -22,6 +23,7 @@ import HeadInject from './components/HeadInject.vue'
 import ProgressBar from './components/ProgressBar.vue'
 import BackToTop from './components/BackToTop.vue'
 import Loader from './components/Loader.vue'
+import LoadingScreen from './views/LoadingScreen.vue'
 export default {
   name: 'App',
   components:{
@@ -33,7 +35,7 @@ export default {
     HeadInject,
     ProgressBar,
     BackToTop,
-    Loader,
+    LoadingScreen,
   
   },
 
