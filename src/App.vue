@@ -8,7 +8,7 @@
     <ProjectsAndExperience></ProjectsAndExperience>
     <Contact></Contact>
     <BackToTop></BackToTop>
-    <CountDownWidget date="1 May 2024"></CountDownWidget>
+    <CountDownWidget date="14 May 2024"></CountDownWidget>
   </div>
 </template>
 
