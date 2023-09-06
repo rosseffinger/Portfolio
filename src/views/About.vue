@@ -145,7 +145,14 @@ ul li{
     max-width: 900px;
   }
 }
-
+@media screen and (min-width: 1500px){
+    .list{
+        max-width: 40vw;
+    }
+    .mid-level-div{
+      max-width: 40vw;
+    }
+}
 
 }
 /* .about{

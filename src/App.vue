@@ -8,6 +8,7 @@
     <ProjectsAndExperience></ProjectsAndExperience>
     <Contact></Contact>
     <BackToTop></BackToTop>
+    <CountDownWidget date="1 May 2024"></CountDownWidget>
   </div>
 </template>
 
@@ -22,6 +23,7 @@ import HeadInject from './components/HeadInject.vue'
 import ProgressBar from './components/ProgressBar.vue'
 import BackToTop from './components/BackToTop.vue'
 import LoadingScreen from './views/LoadingScreen.vue'
+import CountDownWidget from './components/CountDown.vue'
 export default {
   name: 'App',
   components:{
@@ -34,6 +36,7 @@ export default {
     ProgressBar,
     BackToTop,
     LoadingScreen,
+    CountDownWidget
   
   },
 
