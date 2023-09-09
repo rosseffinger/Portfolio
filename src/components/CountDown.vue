@@ -87,4 +87,11 @@ export default {
   padding: 5px;
   margin-right: 5px;
 }
+
+@media screen and (max-width: 768px) {
+    .timer-div{
+        width:100%; 
+        margin-right: 15px;
+    }
+}
 </style>
